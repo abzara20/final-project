@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .content {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
   background-color: #540D6E;
 }
@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6, p {
   src: url(fonts/PTSerif-Regular.ttf);
 }
 .hero {
-  width: 1280px;
+  max-width: 1280px;
   height: 500px;
   background-image: linear-gradient(to right, rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url(../images/home-hero.jpg);
   background-size: cover;
@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 nav {
-  width: 980px;
+  max-width: 980px;
   height: 92px;
   margin: 0 auto;
   display: flex;
@@ -97,5 +97,57 @@ nav .links a span {
 footer {
   height: 455px;
   width: 100%;
+  padding-top: 36px;
   background-color: #EE4367;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .address-text {
+  margin-top: 45px;
+}
+footer .address-text p {
+  font-weight: lighter;
+  color: white;
+  font-family: Gill;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+footer .subscription {
+  margin-top: 45px;
+  display: flex;
+}
+footer .subscription input {
+  width: 529px;
+  height: 60px;
+  padding-left: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  font-family: Gill;
+  font-size: 16px;
+}
+footer .subscription ::placeholder {
+  font-family: Gill;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
+}
+footer .subscription button {
+  margin: -5px;
+  width: 167px;
+  height: 60px;
+  border: none;
+  background-color: white;
+  color: #EE4367;
+}
+footer .social-media {
+  margin-top: 30px;
+  display: flex;
+  width: 154.66px;
+  justify-content: space-between;
+}
+footer .social-media img {
+  height: 31.22px;
+  width: 31.22px;
 }
