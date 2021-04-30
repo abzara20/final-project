@@ -1,0 +1,8 @@
+// this is where the files that will affect everything go
+@import "variables.scss";
+@import "structure.scss";
+
+//this is where the header and footer, which are on every page, will go
+@import "constants/hero.scss";
+@import "constants/nav.scss";
+@import "constants/footer.scss";

@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+.content {
+  width: 1280px;
+  margin: 0 auto;
+  background-color: #540D6E;
+}
+
+@font-face {
+  font-family: Gill;
+  src: url(fonts/GillSans/GillSans.ttf);
+}
+@font-face {
+  font-family: Gill-Italic;
+  src: url(fonts/GillSans/GillSans-Italic.ttf);
+}
+@font-face {
+  font-family: PT;
+  src: url(fonts/PTSerif-Regular.ttf);
+}
+.hero {
+  width: 1280px;
+  height: 500px;
+  background-image: linear-gradient(to right, rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url(../images/home-hero.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.hero .header {
+  text-align: center;
+  padding-top: 63.5px;
+}
+.hero .header h1 {
+  color: white;
+  font-family: PT;
+  font-weight: lighter;
+  font-size: 40px;
+}
+.hero .header h4 {
+  color: #EE4367;
+  font-family: Gill-Italic;
+  font-weight: lighter;
+  font-size: 20px;
+}
+.hero .header p {
+  color: white;
+  font-family: Gill-Italic;
+  font-weight: lighter;
+  font-size: 20px;
+}
+.hero .header button {
+  background-color: #EE4367;
+  color: white;
+  border: none;
+  width: 121.62px;
+  height: 40.04px;
+  font-family: Gill;
+  font-size: 15px;
+}
+
+nav {
+  width: 980px;
+  height: 92px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid white;
+}
+nav .logo {
+  height: 42px;
+  width: 92px;
+  font-size: 15px;
+}
+nav .links a {
+  color: white;
+  font-family: Gill;
+  text-decoration: none;
+}
+nav .links a span {
+  font-size: 21px;
+  color: #EE4367;
+  padding: 0 8px;
+}
+
+footer {
+  height: 455px;
+  width: 100%;
+  background-color: #EE4367;
+}

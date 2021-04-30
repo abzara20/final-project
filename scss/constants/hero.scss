@@ -1,0 +1,40 @@
+.hero {
+    width: 1280px;
+    height: 500px;
+    background-image: linear-gradient(to right, $yellow-overlay,$yellow-overlay) , url(../images/home-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    .header{
+        text-align: center;
+        padding-top: 63.5px;
+        h1{
+            color: white;
+            font-family: PT;
+            font-weight: lighter;
+            font-size: 40px;
+        }
+        h4{
+            color: $site-pink;
+            font-family: Gill-Italic;
+            font-weight: lighter;
+            font-size: 20px;
+        }
+        p{
+            color: white;
+            font-family: Gill-Italic;
+            font-weight: lighter;
+            font-size: 20px;
+        }
+        button{
+            background-color: $site-pink;
+            color: white;
+            border: none;
+            width: 121.62px;
+            height: 40.04px;
+
+            font-family: Gill;
+            font-size: 15px;
+        }
+    }
+
+}

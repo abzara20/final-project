@@ -1,0 +1,27 @@
+nav{
+    width: 980px;
+    height:92px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    // background-color: $yellow-color;
+    align-items: center;
+    border-bottom: 3px solid white;
+    .logo{
+        height: 42px;
+        width: 92px;
+        font-size: 15px;
+    }
+    .links{
+        a{
+            color: white;
+            font-family: Gill;
+            text-decoration: none;
+            span{
+                font-size: 21px;
+                color: $site-pink;
+                padding: 0 8px;
+            }
+        }
+    }
+}
