@@ -1,3 +1,98 @@
 .home{
-    
+    .quote{
+        background-color: white;
+        width: 100%;
+        min-height: 300px;
+        padding-top: 77px;
+        
+        .text-container{
+            margin: 0 auto;
+            max-width: 980px;
+            p{
+                font-family: Gill-Semibold-Italic;
+                font-size: 15px;
+                color: $yellow-color;
+            }
+            h3{
+                padding: 4px 0;
+                margin-bottom: 0px;
+                font-family: 15px;
+                font-family: PT;
+                font-weight: lighter;
+                color: $site-pink;
+            }
+            h6{
+                font-weight: lighter;
+                font-family: PT;
+                font-size: 10px;
+                color: #A8A8A8;
+            }
+        }
+    }
+
+    .upcoming-events{
+        padding: 48px 20px 0 40px;
+        background-color: $site-purple;
+        width: 100%;
+        min-height: 320px;
+
+        .header{
+            color: white;
+            font-family: Gill;
+            border-bottom: 2px solid white;
+            width: 392px;
+            p{
+                font-weight: lighter;
+                font-size: 25px;
+                letter-spacing: 3px;
+                margin-bottom: 10.5px;
+            }
+        }
+
+        .calendar{
+            margin-top: 34.5px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .calendar-date{
+                display: flex;
+                margin-right: 20px;
+                .date-icon{
+                    padding-top: 8px;
+                    margin-right: 20px;
+                    height:60px;
+                    width: 60px;
+                    background-color: $site-pink;
+                    color: white;
+                    text-align: center;
+                    h3{
+                        font-family: Gill-Bold;
+                        font-size: 22px;
+                        font-weight: lighter;
+                        margin-bottom: 0;
+                    }
+                    p{
+                        font-family: Gill-Light;
+                        font-size: 12px;
+                    }
+                }
+                .text-container{
+                    color: white;
+                    width: 140px;
+                    font-family: Gill;
+                    h4{
+                        font-weight: normal;
+                        font-size: 15px;
+                    }
+
+                    p{
+                        color: $site-pink;
+                        font-weight: normal;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
 }

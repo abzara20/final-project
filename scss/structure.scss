@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6, p {
 .content{
   max-width: 1280px;
   margin: 0 auto;
-  background-color: $site-purple;
+  // background-color: $site-purple;
 
 }
 
@@ -25,7 +25,18 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: Gill-Italic;
   src: url(fonts/GillSans/GillSans-Italic.ttf);
 }
-
+@font-face {
+  font-family: Gill-Semibold-Italic;
+  src: url(fonts/GillSans/GillSans-SemiboldItalic.ttf);
+}
+@font-face {
+  font-family: Gill-Bold;
+  src: url(fonts/GillSans/GillSans-Bold.ttf);
+}
+@font-face {
+  font-family: Gill-Light;
+  src: url(fonts/GillSans/GillSans-Light.ttf);
+}
 @font-face {
   font-family: PT;
   src: url(fonts/PTSerif-Regular.ttf);

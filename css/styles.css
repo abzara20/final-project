@@ -15,7 +15,6 @@ h1, h2, h3, h4, h5, h6, p {
 .content {
   max-width: 1280px;
   margin: 0 auto;
-  background-color: #540D6E;
 }
 
 @font-face {
@@ -25,6 +24,18 @@ h1, h2, h3, h4, h5, h6, p {
 @font-face {
   font-family: Gill-Italic;
   src: url(fonts/GillSans/GillSans-Italic.ttf);
+}
+@font-face {
+  font-family: Gill-Semibold-Italic;
+  src: url(fonts/GillSans/GillSans-SemiboldItalic.ttf);
+}
+@font-face {
+  font-family: Gill-Bold;
+  src: url(fonts/GillSans/GillSans-Bold.ttf);
+}
+@font-face {
+  font-family: Gill-Light;
+  src: url(fonts/GillSans/GillSans-Light.ttf);
 }
 @font-face {
   font-family: PT;
@@ -150,4 +161,96 @@ footer .social-media {
 footer .social-media img {
   height: 31.22px;
   width: 31.22px;
+}
+
+.home .quote {
+  background-color: white;
+  width: 100%;
+  min-height: 300px;
+  padding-top: 77px;
+}
+.home .quote .text-container {
+  margin: 0 auto;
+  max-width: 980px;
+}
+.home .quote .text-container p {
+  font-family: Gill-Semibold-Italic;
+  font-size: 15px;
+  color: #FFD140;
+}
+.home .quote .text-container h3 {
+  padding: 4px 0;
+  margin-bottom: 0px;
+  font-family: 15px;
+  font-family: PT;
+  font-weight: lighter;
+  color: #EE4367;
+}
+.home .quote .text-container h6 {
+  font-weight: lighter;
+  font-family: PT;
+  font-size: 10px;
+  color: #A8A8A8;
+}
+.home .upcoming-events {
+  padding: 48px 20px 0 40px;
+  background-color: #540D6E;
+  width: 100%;
+  min-height: 320px;
+}
+.home .upcoming-events .header {
+  color: white;
+  font-family: Gill;
+  border-bottom: 2px solid white;
+  width: 392px;
+}
+.home .upcoming-events .header p {
+  font-weight: lighter;
+  font-size: 25px;
+  letter-spacing: 3px;
+  margin-bottom: 10.5px;
+}
+.home .upcoming-events .calendar {
+  margin-top: 34.5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.home .upcoming-events .calendar .calendar-date {
+  display: flex;
+  margin-right: 20px;
+}
+.home .upcoming-events .calendar .calendar-date .date-icon {
+  padding-top: 8px;
+  margin-right: 20px;
+  height: 60px;
+  width: 60px;
+  background-color: #EE4367;
+  color: white;
+  text-align: center;
+}
+.home .upcoming-events .calendar .calendar-date .date-icon h3 {
+  font-family: Gill-Bold;
+  font-size: 22px;
+  font-weight: lighter;
+  margin-bottom: 0;
+}
+.home .upcoming-events .calendar .calendar-date .date-icon p {
+  font-family: Gill-Light;
+  font-size: 12px;
+}
+.home .upcoming-events .calendar .calendar-date .text-container {
+  color: white;
+  width: 140px;
+  font-family: Gill;
+}
+.home .upcoming-events .calendar .calendar-date .text-container h4 {
+  font-weight: normal;
+  font-size: 15px;
+}
+.home .upcoming-events .calendar .calendar-date .text-container p {
+  color: #EE4367;
+  font-weight: normal;
+  font-size: 13px;
 }
