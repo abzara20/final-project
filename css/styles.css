@@ -104,6 +104,13 @@ nav .links a span {
   color: #EE4367;
   padding: 0 8px;
 }
+nav .links .black-text {
+  color: black;
+}
+
+nav.black-nav {
+  border-bottom: 3px solid black;
+}
 
 footer {
   height: 455px;
