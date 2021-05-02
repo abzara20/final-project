@@ -36,3 +36,12 @@ nav{
 nav.black-nav{
     border-bottom: 3px solid black;
 }
+
+@media only screen and (max-width:820px){
+    nav{
+        margin: 10px;
+        .links{
+            margin-right: 10px;
+        }
+    }
+}

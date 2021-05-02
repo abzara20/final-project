@@ -1,0 +1,46 @@
+.about{
+    width: 100%;
+    .banner{
+        max-width: 975.5px;
+        margin: 85.5px auto  36.5px auto;
+        .image-container{
+            margin-bottom: 15.8px;
+            height: 378.75px;
+            width: 100%;
+            position: relative;
+            background-image: linear-gradient(to right, $yellow-overlay,$yellow-overlay),url(../images/about.jpg);
+            background-size: cover;
+            background-position: center;
+            .caption{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                p{
+                    margin-bottom: 0;
+                    font-family: Gill;
+                    font-size: 25px;
+                }
+            }
+        }
+        hr{
+            width: 229px;
+            height: 3px;
+            background-color: black;
+        }
+    }
+    
+    .text{
+        max-width: 980px;
+        margin: 0 auto 95px auto;
+        p{
+            font-family: Gill-Light-Italic;
+            font-size: 16px;
+        }
+    }
+}
+
+@media only screen and (max-width:820px){
+    .about{
+        padding: 20px;
+    }
+}
