@@ -148,7 +148,113 @@ var galleryContent = `<div class="gallery">
 </div>
 </div>`;
 
-var blogContent = `blog`;
+var blogContent = `<div class="blog">
+<div class="blog-header">
+    <p>BLOG:</p>
+</div>
+
+<div class="blog-content">
+    <div class="container" id="jun">
+        <div class="date-icon">
+            <h3>06</h3>
+            <p>JUN</p> 
+        </div>
+        <div class="blog-container">
+            <div class="image-container"></div>
+            <div class="text-container">
+                <h3>Sed et persipiatis unde omnis iste natus</h3>
+                <p>
+                    Sed ut perspiciatis unde omnis iste natus 
+                    error sit voluptatem accusantium doloremque laudantium, 
+                    totam rem aperiam, eaque ipsa quae ab illo inventore 
+                    veritatis et quasi architecto beatae vitae dicta sunt 
+                    explicabo. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="jul">
+        <div class="date-icon">
+            <h3>30</h3>
+            <p>JUL</p> 
+        </div>
+        <div class="blog-container">
+            <div class="image-container"></div>
+            <div class="text-container">
+                <h3>Sed et persipiatis unde omnis iste natus</h3>
+                <p>
+                    Sed ut perspiciatis unde omnis iste natus 
+                    error sit voluptatem accusantium doloremque laudantium, 
+                    totam rem aperiam, eaque ipsa quae ab illo inventore 
+                    veritatis et quasi architecto beatae vitae dicta sunt 
+                    explicabo. 
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" id="aug">
+        <div class="date-icon">
+            <h3>30</h3>
+            <p>AUG</p> 
+        </div>
+        <div class="blog-container">
+            <div class="image-container"></div>
+            <div class="text-container">
+                <h3>Sed et persipiatis unde omnis iste natus</h3>
+                <p>
+                    Sed ut perspiciatis unde omnis iste natus 
+                    error sit voluptatem accusantium doloremque laudantium, 
+                    totam rem aperiam, eaque ipsa quae ab illo inventore 
+                    veritatis et quasi architecto beatae vitae dicta sunt 
+                    explicabo. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="nov">
+        <div class="date-icon">
+            <h3>23</h3>
+            <p>NOV</p> 
+        </div>
+        <div class="blog-container">
+            <div class="image-container"></div>
+            <div class="text-container">
+                <h3>Sed et persipiatis unde omnis iste natus</h3>
+                <p>
+                    Sed ut perspiciatis unde omnis iste natus 
+                    error sit voluptatem accusantium doloremque laudantium, 
+                    totam rem aperiam, eaque ipsa quae ab illo inventore 
+                    veritatis et quasi architecto beatae vitae dicta sunt 
+                    explicabo. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="dec">
+        <div class="date-icon">
+            <h3>23</h3>
+            <p>DEC</p> 
+            </div>
+        <div class="blog-container">
+            <div class="image-container"></div>
+            <div class="text-container">
+                <h3>Sed et persipiatis unde omnis iste natus</h3>
+                <p>
+                    Sed ut perspiciatis unde omnis iste natus 
+                    error sit voluptatem accusantium doloremque laudantium, 
+                    totam rem aperiam, eaque ipsa quae ab illo inventore 
+                    veritatis et quasi architecto beatae vitae dicta sunt 
+                    explicabo. 
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>`;
 
 var contactContent = `<div class="contact">
 
@@ -187,6 +293,197 @@ var contactContent = `<div class="contact">
 </div>
 </div>`;
 
-export function getPageContent(pageID) {
+// this is the individual blog entries
+var junContent = `<div class="blog-entry">
+<div class="blog-banner">
+    <div class="date">
+        <h1>06</h1>
+        <p>JUN</p>
+    </div>
+</div>
+<div class="blog-text">
+    <div class="paragraph one">
+        <h3>Header #1:</h3>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit 
+            voluptatem accusantium doloremque laudantium, totam 
+            rem aperiam, eaque ipsa quae ab illo inventore veritatis et 
+            quasi architecto beatae vitae dicta sunt explicabo. Nemo 
+            enim ipsam voluptatem quia voluptas sit aspernatur aut 
+            odit aut fugit, sed quia consequuntur magni dolores eos 
+            qui ratione voluptatem sequi nesciunt. 
+        </p>
+        <p>
+            Neque porro quisquam est, qui dolorem ipsum quia dolor 
+            sit amet, consectetur, adipisci velit, sed quia non 
+            numquam eius modi tempora incidunt ut labore et dolore 
+            magnam aliquam quaerat voluptatem. 
+        </p>
+    </div>
+    <div class="paragraph two">
+        <h3>Header #2:</h3>
+        <p>
+            Neque porro quisquam est, qui dolorem ipsum quia dolor 
+            sit amet, consectetur, adipisci velit, sed quia non 
+            numquam eius modi tempora incidunt ut labore et dolore 
+            magnam aliquam quaerat voluptatem. 
+        </p>
+    </div>
+</div>
+</div>`;
+var julContent = `<div class="blog-entry">
+<div class="blog-banner">
+    <div class="date">
+        <h1>30</h1>
+        <p>JUL</p>
+    </div>
+</div>
+<div class="blog-text">
+    <div class="paragraph one">
+        <h3>Header #1:</h3>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit 
+            voluptatem accusantium doloremque laudantium, totam 
+            rem aperiam, eaque ipsa quae ab illo inventore veritatis et 
+            quasi architecto beatae vitae dicta sunt explicabo. Nemo 
+            enim ipsam voluptatem quia voluptas sit aspernatur aut 
+            odit aut fugit, sed quia consequuntur magni dolores eos 
+            qui ratione voluptatem sequi nesciunt. 
+        </p>
+        <p>
+            Neque porro quisquam est, qui dolorem ipsum quia dolor 
+            sit amet, consectetur, adipisci velit, sed quia non 
+            numquam eius modi tempora incidunt ut labore et dolore 
+            magnam aliquam quaerat voluptatem. 
+        </p>
+    </div>
+    <div class="paragraph two">
+        <h3>Header #2:</h3>
+        <p>
+            Neque porro quisquam est, qui dolorem ipsum quia dolor 
+            sit amet, consectetur, adipisci velit, sed quia non 
+            numquam eius modi tempora incidunt ut labore et dolore 
+            magnam aliquam quaerat voluptatem. 
+        </p>
+    </div>
+</div>
+</div>`;
+var augContent = `<div class="blog-entry">
+<div class="blog-banner">
+    <div class="date">
+        <h1>30</h1>
+        <p>AUG</p>
+    </div>
+</div>
+<div class="blog-text">
+    <div class="paragraph one">
+        <h3>Header #1:</h3>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit 
+            voluptatem accusantium doloremque laudantium, totam 
+            rem aperiam, eaque ipsa quae ab illo inventore veritatis et 
+            quasi architecto beatae vitae dicta sunt explicabo. Nemo 
+            enim ipsam voluptatem quia voluptas sit aspernatur aut 
+            odit aut fugit, sed quia consequuntur magni dolores eos 
+            qui ratione voluptatem sequi nesciunt. 
+        </p>
+        <p>
+            Neque porro quisquam est, qui dolorem ipsum quia dolor 
+            sit amet, consectetur, adipisci velit, sed quia non 
+            numquam eius modi tempora incidunt ut labore et dolore 
+            magnam aliquam quaerat voluptatem. 
+        </p>
+    </div>
+    <div class="paragraph two">
+        <h3>Header #2:</h3>
+        <p>
+            Neque porro quisquam est, qui dolorem ipsum quia dolor 
+            sit amet, consectetur, adipisci velit, sed quia non 
+            numquam eius modi tempora incidunt ut labore et dolore 
+            magnam aliquam quaerat voluptatem. 
+        </p>
+    </div>
+</div>
+</div>`;
+var novContent = `<div class="blog-entry">
+<div class="blog-banner">
+    <div class="date">
+        <h1>23</h1>
+        <p>NOV</p>
+    </div>
+</div>
+<div class="blog-text">
+    <div class="paragraph one">
+        <h3>Header #1:</h3>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit 
+            voluptatem accusantium doloremque laudantium, totam 
+            rem aperiam, eaque ipsa quae ab illo inventore veritatis et 
+            quasi architecto beatae vitae dicta sunt explicabo. Nemo 
+            enim ipsam voluptatem quia voluptas sit aspernatur aut 
+            odit aut fugit, sed quia consequuntur magni dolores eos 
+            qui ratione voluptatem sequi nesciunt. 
+        </p>
+        <p>
+            Neque porro quisquam est, qui dolorem ipsum quia dolor 
+            sit amet, consectetur, adipisci velit, sed quia non 
+            numquam eius modi tempora incidunt ut labore et dolore 
+            magnam aliquam quaerat voluptatem. 
+        </p>
+    </div>
+    <div class="paragraph two">
+        <h3>Header #2:</h3>
+        <p>
+            Neque porro quisquam est, qui dolorem ipsum quia dolor 
+            sit amet, consectetur, adipisci velit, sed quia non 
+            numquam eius modi tempora incidunt ut labore et dolore 
+            magnam aliquam quaerat voluptatem. 
+        </p>
+    </div>
+</div>
+</div>`;
+var decContent = `<div class="blog-entry">
+<div class="blog-banner">
+    <div class="date">
+        <h1>23</h1>
+        <p>DEC</p>
+    </div>
+</div>
+<div class="blog-text">
+    <div class="paragraph one">
+        <h3>Header #1:</h3>
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit 
+            voluptatem accusantium doloremque laudantium, totam 
+            rem aperiam, eaque ipsa quae ab illo inventore veritatis et 
+            quasi architecto beatae vitae dicta sunt explicabo. Nemo 
+            enim ipsam voluptatem quia voluptas sit aspernatur aut 
+            odit aut fugit, sed quia consequuntur magni dolores eos 
+            qui ratione voluptatem sequi nesciunt. 
+        </p>
+        <p>
+            Neque porro quisquam est, qui dolorem ipsum quia dolor 
+            sit amet, consectetur, adipisci velit, sed quia non 
+            numquam eius modi tempora incidunt ut labore et dolore 
+            magnam aliquam quaerat voluptatem. 
+        </p>
+    </div>
+    <div class="paragraph two">
+        <h3>Header #2:</h3>
+        <p>
+            Neque porro quisquam est, qui dolorem ipsum quia dolor 
+            sit amet, consectetur, adipisci velit, sed quia non 
+            numquam eius modi tempora incidunt ut labore et dolore 
+            magnam aliquam quaerat voluptatem. 
+        </p>
+    </div>
+</div>
+</div>`;
+
+export function getPageContent(pageID, callback) {
     $("#app").html(eval(pageID));
+    // runs additional function if blog or gallery page
+    if(callback) {
+        callback();
+    }
 }

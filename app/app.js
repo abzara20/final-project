@@ -28,26 +28,60 @@ function init(){
             $(".logo-black").css("display","none");
             $(".logo-white").css("display","block");
 
+            MODEL.getPageContent(pageID);
+
+        }else if(navID == "blog"){
+
+            
+            MODEL.getPageContent(pageID, addBlogListener);
+            navBlack();
+
+        }else if(navID == "gallery"){
+
+            MODEL.getPageContent(pageID, addBlogListener);
+            navBlack();
+
         }else{
 
-            // removes hero and heading
-            $(".top").removeClass("hero");
-            $(".header").css("display","none");
-
-            // makes the nav black
-            $("nav").addClass("black-nav");
-            $(".links a").addClass("black-text");
-
-            // this changes the logo from white to black 
-            $(".logo-black").css("display","block");
-            $(".logo-white").css("display","none");
+            MODEL.getPageContent(pageID);
+            navBlack();
         };
 
-        MODEL.getPageContent(pageID);
+        
     });
 };
 
+
+function addBlogListener() {
+    $("div .container").click(function(e){
+        console.log("this work");
+        let entryID = this.id;
+        let pageID = entryID + "Content";
+        MODEL.getPageContent(pageID);
+    });
+}
+
+function addGalleryListener() {
+
+}
+
+// this is a function that will turn the nav bar black and remove the hero
+function navBlack() {
+      // removes hero and heading
+      $(".top").removeClass("hero");
+      $(".header").css("display","none");
+
+      // makes the nav black
+      $("nav").addClass("black-nav");
+      $(".links a").addClass("black-text");
+
+      // this changes the logo from white to black 
+      $(".logo-black").css("display","block");
+      $(".logo-white").css("display","none");
+}
+
 $(document).ready(function(){
     init();
+    // this loads the home page on startup
     // MODEL.getPageContent("homeContent");
 });
