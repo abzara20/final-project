@@ -139,7 +139,42 @@ var galleryContent = `gallery`;
 
 var blogContent = `blog`;
 
-var contactContent = `contact`;
+var contactContent = `<div class="contact">
+
+<div class="contact-header">
+    <p>CONTACT US:</p>
+</div>
+
+<div class="contact-body">
+    <div class="contact-form">
+        <form action="">
+            <div class="row">
+                <input type="text" placeholder="Your name...">
+            </div>
+
+            <div class="row">
+                <input type="text" placeholder="Email Address...">
+            </div>
+
+            <div class="row">
+                <input type="text" placeholder="Company...">
+            </div>
+
+            <div class="row">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message..."></textarea>
+            </div>
+
+            <div class="row">
+                <button>SEND MESSAGE</button>
+            </div>
+        </form>
+    </div>
+    
+    <div class="map-container">
+
+    </div>
+</div>
+</div>`;
 
 export function getPageContent(pageID) {
     $("#app").html(eval(pageID));
