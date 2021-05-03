@@ -64,3 +64,22 @@
         }
     }
 }
+
+@media only screen and (max-width:950px){
+
+    .gallery{
+        padding: 20px;
+        .gallery-header{
+            margin: 0 auto 20px auto;
+            text-align: center;
+        }
+        .gallery-body{
+            width: 500px;
+            justify-content: space-evenly;
+            margin: 0 auto;
+            .purple{
+                width: 500px;
+            }
+        }
+    }
+}

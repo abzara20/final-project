@@ -1,0 +1,80 @@
+.gallery-entry{
+    margin: 50.5px auto 73px auto;
+    max-width: 980.5px;
+    .gallery-banner{
+        background-color: $yellow-color;
+        width: 100%;
+        height: 400.5px;
+        margin-bottom: 50.5px;
+        position: relative;
+
+        background-size: cover;
+        background-position: center;
+
+        .gallery-title{
+            display: flex;
+            position: absolute;
+            bottom: -85px;
+            left: 0;
+            h1{
+                font-family: Gill;
+                font-weight: normal;
+                font-size: 140px;
+                text-shadow: 4px 3px 8px rgba(0, 0, 0, .2) ;
+            }
+
+            h1.smaller{
+                font-size: 115px;
+            }
+
+            span{
+                font-family: Gill;
+                font-size: 300px;
+            }
+        }
+
+    }
+
+    // these are the background and text colors for the gallery pages
+    .yellow{
+        background-image: linear-gradient(to right, $yellow-overlay, $yellow-overlay), 
+        url(../images/gallery/1.png);
+        color: $yellow-color;
+    }
+    .pink{
+        background-image: linear-gradient(to right, $pink-overlay, $pink-overlay), 
+        url(../images/gallery/2.jpeg);
+        color: $site-pink;
+    }
+    .green{
+        background-image: linear-gradient(to right, $green-overlay, $green-overlay), 
+        url(../images/gallery/3.jpg);
+        color: $green;
+    }
+    .purple{
+        background-image: linear-gradient(to right, $purple-overlay, $purple-overlay), 
+        url(../images/gallery/4.jpg);
+        color: $site-purple;
+        
+    }
+    .teal{
+        background-image: linear-gradient(to right, $teal-overlay, $teal-overlay), 
+        url(../images/gallery/5.png);
+        color: $teal;
+        
+    }
+
+    .gallery-text{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .paragraph{
+            width: 451px;
+            p{
+                font-size: 16px;
+                font-family: Gill-Light-Italic;
+            }
+        }
+    }
+}

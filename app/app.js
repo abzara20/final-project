@@ -38,7 +38,7 @@ function init(){
 
         }else if(navID == "gallery"){
 
-            MODEL.getPageContent(pageID, addBlogListener);
+            MODEL.getPageContent(pageID, addGalleryListener);
             navBlack();
 
         }else{
@@ -62,7 +62,12 @@ function addBlogListener() {
 }
 
 function addGalleryListener() {
-
+    $("div .img-container").click(function(e){
+        console.log("this also work");
+        let galleryID = this.id;
+        let pageID = galleryID + "Content";
+        MODEL.getPageContent(pageID);
+    });
 }
 
 // this is a function that will turn the nav bar black and remove the hero
@@ -83,5 +88,5 @@ function navBlack() {
 $(document).ready(function(){
     init();
     // this loads the home page on startup
-    // MODEL.getPageContent("homeContent");
+    MODEL.getPageContent("homeContent");
 });

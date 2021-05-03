@@ -15,101 +15,107 @@ var homeContent = `<div class="home">
 </section>
 
 <section class="upcoming-events">
+    
+
+    <div class="calendar">
+
     <div class="header">
         <p>UPCOMING EVENTS:</p>
     </div>
 
-    <div class="calendar">
-
+        <div class="calendar-container">
         <div class="calendar-date">
-            <div class="date-icon">
-                <h3>06</h3>
-                <p>JUN</p>
-            </div>
-
-            <div class="text-container">
-                <h4>
-                    Sed et persipiatis unde omnis iste natus
-                </h4>
-                
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Aliquid temporibus quos aspernatur
-                </p>
-            </div>
+        <div class="date-icon">
+            <h3>06</h3>
+            <p>JUN</p>
         </div>
 
-        <div class="calendar-date">
-            <div class="date-icon">
-                <h3>30</h3>
-                <p>JUL</p>
-            </div>
+        <div class="text-container">
+            <h4>
+                Sed et persipiatis unde omnis iste natus
+            </h4>
+            
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Aliquid temporibus quos aspernatur
+            </p>
+        </div>
+    </div>
 
-            <div class="text-container">
-                <h4>
-                    Sed et persipiatis unde omnis iste natus
-                </h4>
-                
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Aliquid temporibus quos aspernatur
-                </p>
-            </div>
+    <div class="calendar-date">
+        <div class="date-icon">
+            <h3>30</h3>
+            <p>JUL</p>
         </div>
 
-        <div class="calendar-date">
-            <div class="date-icon">
-                <h3>30</h3>
-                <p>AUG</p>
-            </div>
+        <div class="text-container">
+            <h4>
+                Sed et persipiatis unde omnis iste natus
+            </h4>
+            
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Aliquid temporibus quos aspernatur
+            </p>
+        </div>
+    </div>
 
-            <div class="text-container">
-                <h4>
-                    Sed et persipiatis unde omnis iste natus
-                </h4>
-                
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Aliquid temporibus quos aspernatur
-                </p>
-            </div>
+    <div class="calendar-date">
+        <div class="date-icon">
+            <h3>30</h3>
+            <p>AUG</p>
         </div>
 
-        <div class="calendar-date">
-            <div class="date-icon">
-                <h3>23</h3>
-                <p>NOV</p>
-            </div>
+        <div class="text-container">
+            <h4>
+                Sed et persipiatis unde omnis iste natus
+            </h4>
+            
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Aliquid temporibus quos aspernatur
+            </p>
+        </div>
+    </div>
 
-            <div class="text-container">
-                <h4>
-                    Sed et persipiatis unde omnis iste natus
-                </h4>
-                
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Aliquid temporibus quos aspernatur
-                </p>
-            </div>
+    <div class="calendar-date">
+        <div class="date-icon">
+            <h3>23</h3>
+            <p>NOV</p>
         </div>
 
-        <div class="calendar-date">
-            <div class="date-icon">
-                <h3>23</h3>
-                <p>DEC</p>
-            </div>
-
-            <div class="text-container">
-                <h4>
-                    Sed et persipiatis unde omnis iste natus
-                </h4>
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Aliquid temporibus quos aspernatur
-                </p>
-            </div>
+        <div class="text-container">
+            <h4>
+                Sed et persipiatis unde omnis iste natus
+            </h4>
+            
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Aliquid temporibus quos aspernatur
+            </p>
         </div>
+    </div>
+
+    <div class="calendar-date">
+        <div class="date-icon">
+            <h3>23</h3>
+            <p>DEC</p>
+        </div>
+
+        <div class="text-container">
+            <h4>
+                Sed et persipiatis unde omnis iste natus
+            </h4>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Aliquid temporibus quos aspernatur
+            </p>
+        </div>
+    </div>
+
+    </div>
+        
     </div>
 </section>
 </div>`;
@@ -140,11 +146,11 @@ var galleryContent = `<div class="gallery">
     <p>GALLERY:</p>
 </div>
 <div class="gallery-body">
-    <div class="img-container yellow"></div>
-    <div class="img-container pink"></div>
-    <div class="img-container green"></div>
-    <div class="img-container purple"></div>
-    <div class="img-container teal"></div>
+    <div id="ylw" class="img-container yellow"></div>
+    <div id="pnk" class="img-container pink"></div>
+    <div id="grn" class="img-container green"></div>
+    <div id="vio" class="img-container purple"></div>
+    <div id="blu" class="img-container teal"></div>
 </div>
 </div>`;
 
@@ -480,6 +486,159 @@ var decContent = `<div class="blog-entry">
 </div>
 </div>`;
 
+// this is where the individual galleries go
+var ylwContent = `<div class="gallery-entry">
+<div class="gallery-banner yellow">
+    <div class="gallery-title">
+        <h1><span>1.</span>&nbspfood festival</h1>
+    </div>
+</div>
+
+<div class="gallery-text">
+    <div class="paragraph">
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit 
+            voluptatem accusantium doloremque laudantium, totam 
+            rem aperiam, eaque ipsa quae ab illo inventore veritatis 
+            et quasi architecto beatae vitae dicta sunt explicabo. 
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
+            aut odit aut fugit, sed quia consequuntur magni dolores 
+            eos qui ratione voluptatem sequi nesciunt. 
+        </p>
+    </div>
+    <div class="paragraph">
+        <p>
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit 
+            amet, consectetur, adipisci velit, sed quia non numquam eius 
+            modi tempora incidunt ut labore et dolore magnam aliquam 
+            quaerat voluptatem. 
+        </p>
+    </div>
+</div>
+
+</div>`;
+
+var pnkContent = `<div class="gallery-entry">
+<div class="gallery-banner pink">
+    <div class="gallery-title">
+        <h1><span>2.</span>&nbspdee-jay</h1>
+    </div>
+</div>
+
+<div class="gallery-text">
+    <div class="paragraph">
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit 
+            voluptatem accusantium doloremque laudantium, totam 
+            rem aperiam, eaque ipsa quae ab illo inventore veritatis 
+            et quasi architecto beatae vitae dicta sunt explicabo. 
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
+            aut odit aut fugit, sed quia consequuntur magni dolores 
+            eos qui ratione voluptatem sequi nesciunt. 
+        </p>
+    </div>
+    <div class="paragraph">
+        <p>
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit 
+            amet, consectetur, adipisci velit, sed quia non numquam eius 
+            modi tempora incidunt ut labore et dolore magnam aliquam 
+            quaerat voluptatem. 
+        </p>
+    </div>
+</div>
+
+</div>`;
+
+var grnContent = ` <div class="gallery-entry">
+<div class="gallery-banner green">
+    <div class="gallery-title">
+        <h1><span>3.</span>&nbspspeech</h1>
+    </div>
+</div>
+
+<div class="gallery-text">
+    <div class="paragraph">
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit 
+            voluptatem accusantium doloremque laudantium, totam 
+            rem aperiam, eaque ipsa quae ab illo inventore veritatis 
+            et quasi architecto beatae vitae dicta sunt explicabo. 
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
+            aut odit aut fugit, sed quia consequuntur magni dolores 
+            eos qui ratione voluptatem sequi nesciunt. 
+        </p>
+    </div>
+    <div class="paragraph">
+        <p>
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit 
+            amet, consectetur, adipisci velit, sed quia non numquam eius 
+            modi tempora incidunt ut labore et dolore magnam aliquam 
+            quaerat voluptatem. 
+        </p>
+    </div>
+</div>
+
+</div>`;
+
+var vioContent = `<div class="gallery-entry">
+<div class="gallery-banner purple">
+    <div class="gallery-title">
+        <h1 class="smaller"><span>4.</span>&nbspopen foodfest</h1>
+    </div>
+</div>
+
+<div class="gallery-text">
+    <div class="paragraph">
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit 
+            voluptatem accusantium doloremque laudantium, totam 
+            rem aperiam, eaque ipsa quae ab illo inventore veritatis 
+            et quasi architecto beatae vitae dicta sunt explicabo. 
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
+            aut odit aut fugit, sed quia consequuntur magni dolores 
+            eos qui ratione voluptatem sequi nesciunt. 
+        </p>
+    </div>
+    <div class="paragraph">
+        <p>
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit 
+            amet, consectetur, adipisci velit, sed quia non numquam eius 
+            modi tempora incidunt ut labore et dolore magnam aliquam 
+            quaerat voluptatem. 
+        </p>
+    </div>
+</div>
+</div>`;
+
+var bluContent = `<div class="gallery-entry">
+<div class="gallery-banner teal">
+    <div class="gallery-title">
+        <h1><span>4.</span>&nbspinternational</h1>
+    </div>
+</div>
+
+<div class="gallery-text">
+    <div class="paragraph">
+        <p>
+            Sed ut perspiciatis unde omnis iste natus error sit 
+            voluptatem accusantium doloremque laudantium, totam 
+            rem aperiam, eaque ipsa quae ab illo inventore veritatis 
+            et quasi architecto beatae vitae dicta sunt explicabo. 
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
+            aut odit aut fugit, sed quia consequuntur magni dolores 
+            eos qui ratione voluptatem sequi nesciunt. 
+        </p>
+    </div>
+    <div class="paragraph">
+        <p>
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit 
+            amet, consectetur, adipisci velit, sed quia non numquam eius 
+            modi tempora incidunt ut labore et dolore magnam aliquam 
+            quaerat voluptatem. 
+        </p>
+    </div>
+</div>
+</div>`;
 export function getPageContent(pageID, callback) {
     $("#app").html(eval(pageID));
     // runs additional function if blog or gallery page

@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .content {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6, p {
   src: url(fonts/PTSerif-Regular.ttf);
 }
 .hero {
-  max-width: 1280px;
+  width: 100%;
   height: 500px;
   background-image: linear-gradient(to right, rgba(255, 209, 64, 0.7), rgba(255, 209, 64, 0.7)), url(../images/home-hero.jpg);
   background-size: cover;
@@ -231,30 +231,34 @@ footer .social-media img {
   width: 100%;
   min-height: 320px;
 }
-.home .upcoming-events .header {
+.home .upcoming-events .calendar {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.home .upcoming-events .calendar .header {
   color: white;
   font-family: Gill;
   border-bottom: 2px solid white;
   width: 392px;
 }
-.home .upcoming-events .header p {
+.home .upcoming-events .calendar .header p {
   font-weight: lighter;
   font-size: 25px;
   letter-spacing: 3px;
   margin-bottom: 10.5px;
 }
-.home .upcoming-events .calendar {
+.home .upcoming-events .calendar .calendar-container {
   margin-top: 34.5px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.home .upcoming-events .calendar .calendar-date {
+.home .upcoming-events .calendar .calendar-container .calendar-date {
   display: flex;
   margin-right: 20px;
 }
-.home .upcoming-events .calendar .calendar-date .date-icon {
+.home .upcoming-events .calendar .calendar-container .calendar-date .date-icon {
   padding-top: 8px;
   margin-right: 20px;
   height: 60px;
@@ -263,26 +267,26 @@ footer .social-media img {
   color: white;
   text-align: center;
 }
-.home .upcoming-events .calendar .calendar-date .date-icon h3 {
+.home .upcoming-events .calendar .calendar-container .calendar-date .date-icon h3 {
   font-family: Gill-Bold;
   font-size: 22px;
   font-weight: lighter;
   margin-bottom: 0;
 }
-.home .upcoming-events .calendar .calendar-date .date-icon p {
+.home .upcoming-events .calendar .calendar-container .calendar-date .date-icon p {
   font-family: Gill-Light;
   font-size: 12px;
 }
-.home .upcoming-events .calendar .calendar-date .text-container {
+.home .upcoming-events .calendar .calendar-container .calendar-date .text-container {
   color: white;
   width: 140px;
   font-family: Gill;
 }
-.home .upcoming-events .calendar .calendar-date .text-container h4 {
+.home .upcoming-events .calendar .calendar-container .calendar-date .text-container h4 {
   font-weight: normal;
   font-size: 15px;
 }
-.home .upcoming-events .calendar .calendar-date .text-container p {
+.home .upcoming-events .calendar .calendar-container .calendar-date .text-container p {
   color: #EE4367;
   font-weight: normal;
   font-size: 13px;
@@ -486,6 +490,89 @@ footer .social-media img {
   background-image: linear-gradient(to right, rgba(59, 206, 171, 0.7), rgba(59, 206, 171, 0.7)), url(../images/gallery/5.png);
   background-size: cover;
   background-position: center;
+}
+
+@media only screen and (max-width: 950px) {
+  .gallery {
+    padding: 20px;
+  }
+  .gallery .gallery-header {
+    margin: 0 auto 20px auto;
+    text-align: center;
+  }
+  .gallery .gallery-body {
+    width: 500px;
+    justify-content: space-evenly;
+    margin: 0 auto;
+  }
+  .gallery .gallery-body .purple {
+    width: 500px;
+  }
+}
+.gallery-entry {
+  margin: 50.5px auto 73px auto;
+  max-width: 980.5px;
+}
+.gallery-entry .gallery-banner {
+  background-color: #FFD140;
+  width: 100%;
+  height: 400.5px;
+  margin-bottom: 50.5px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+.gallery-entry .gallery-banner .gallery-title {
+  display: flex;
+  position: absolute;
+  bottom: -85px;
+  left: 0;
+}
+.gallery-entry .gallery-banner .gallery-title h1 {
+  font-family: Gill;
+  font-weight: normal;
+  font-size: 140px;
+  text-shadow: 4px 3px 8px rgba(0, 0, 0, 0.2);
+}
+.gallery-entry .gallery-banner .gallery-title h1.smaller {
+  font-size: 115px;
+}
+.gallery-entry .gallery-banner .gallery-title span {
+  font-family: Gill;
+  font-size: 300px;
+}
+.gallery-entry .yellow {
+  background-image: linear-gradient(to right, rgba(255, 209, 64, 0.7), rgba(255, 209, 64, 0.7)), url(../images/gallery/1.png);
+  color: #FFD140;
+}
+.gallery-entry .pink {
+  background-image: linear-gradient(to right, rgba(238, 67, 103, 0.7), rgba(238, 67, 103, 0.7)), url(../images/gallery/2.jpeg);
+  color: #EE4367;
+}
+.gallery-entry .green {
+  background-image: linear-gradient(to right, rgba(8, 173, 105, 0.7), rgba(8, 173, 105, 0.7)), url(../images/gallery/3.jpg);
+  color: #08AD69;
+}
+.gallery-entry .purple {
+  background-image: linear-gradient(to right, rgba(84, 13, 110, 0.7), rgba(84, 13, 110, 0.7)), url(../images/gallery/4.jpg);
+  color: #540D6E;
+}
+.gallery-entry .teal {
+  background-image: linear-gradient(to right, rgba(59, 206, 171, 0.7), rgba(59, 206, 171, 0.7)), url(../images/gallery/5.png);
+  color: #3BCEAB;
+}
+.gallery-entry .gallery-text {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.gallery-entry .gallery-text .paragraph {
+  width: 451px;
+}
+.gallery-entry .gallery-text .paragraph p {
+  font-size: 16px;
+  font-family: Gill-Light-Italic;
 }
 
 .blog {

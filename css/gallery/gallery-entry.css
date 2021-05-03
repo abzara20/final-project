@@ -1,0 +1,8 @@
+.gallery-entry {
+  margin: 0 auto;
+  max-width: 980.5px;
+}
+.gallery-entry .gallery-banner {
+  width: 100%;
+  height: 400.5px;
+}
