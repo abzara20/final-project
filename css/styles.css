@@ -427,3 +427,87 @@ footer .social-media img {
     margin: 0 auto;
   }
 }
+.gallery {
+  max-width: 980px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  padding-top: 63.5px;
+}
+.gallery .gallery-header {
+  width: 229px;
+  border-bottom: 3px solid black;
+  margin-bottom: 35.5px;
+}
+.gallery .gallery-header p {
+  letter-spacing: 1.5pt;
+  font-family: Gill;
+  font-size: 25px;
+}
+.gallery .gallery-body {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.gallery .gallery-body .img-container {
+  margin-bottom: 20px;
+}
+.gallery .gallery-body .yellow {
+  width: 489px;
+  height: 187px;
+  background-image: linear-gradient(to right, rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url(../images/gallery/1.png);
+  background-size: cover;
+  background-position: center;
+}
+.gallery .gallery-body .pink {
+  width: 187px;
+  height: 187px;
+  background-image: linear-gradient(to right, rgba(238, 67, 103, 0.8), rgba(238, 67, 103, 0.8)), url(../images/gallery/2.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.gallery .gallery-body .green {
+  width: 265px;
+  height: 187px;
+  background-image: linear-gradient(to right, rgba(8, 173, 105, 0.8), rgba(8, 173, 105, 0.8)), url(../images/gallery/3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.gallery .gallery-body .purple {
+  width: 603px;
+  height: 306px;
+  background-image: linear-gradient(to right, rgba(84, 13, 110, 0.8), rgba(84, 13, 110, 0.8)), url(../images/gallery/4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.gallery .gallery-body .teal {
+  width: 355px;
+  height: 306px;
+  background-image: linear-gradient(to right, rgba(59, 206, 171, 0.8), rgba(59, 206, 171, 0.8)), url(../images/gallery/5.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.blog {
+  background-color: aqua;
+  max-width: 980px;
+  margin: 0 auto;
+  padding-bottom: 86 px;
+  padding-top: 63.5px;
+}
+.blog .blog-header {
+  width: 229px;
+  border-bottom: 3px solid black;
+  margin-bottom: 30.5px;
+}
+.blog .blog-header p {
+  letter-spacing: 1.5pt;
+  font-family: Gill;
+  font-size: 25px;
+}
+.blog .blog-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}

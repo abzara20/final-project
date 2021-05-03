@@ -135,7 +135,18 @@ var aboutContent = `<div class="about">
 </div>
 </div>`;
 
-var galleryContent = `gallery`;
+var galleryContent = `<div class="gallery">
+<div class="gallery-header">
+    <p>GALLERY:</p>
+</div>
+<div class="gallery-body">
+    <div class="img-container yellow"></div>
+    <div class="img-container pink"></div>
+    <div class="img-container green"></div>
+    <div class="img-container purple"></div>
+    <div class="img-container teal"></div>
+</div>
+</div>`;
 
 var blogContent = `blog`;
 

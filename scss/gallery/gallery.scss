@@ -1,0 +1,66 @@
+.gallery{
+    max-width: 980px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    padding-top: 63.5px;
+    // background-color: aqua;
+    
+    .gallery-header{
+        width: 229px;
+        border-bottom: 3px solid black;
+        margin-bottom: 35.5px;
+        p{
+            letter-spacing: 1.5pt;
+            font-family: Gill;
+            font-size: 25px;
+        }
+    }
+    .gallery-body{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .img-container{
+            margin-bottom: 20px;
+        }
+        .yellow{
+            width: 489px;
+            height: 187px;
+            background-image: linear-gradient(to right, $yellow-overlay, $yellow-overlay), url(../images/gallery/1.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .pink{
+            width: 187px;
+            height: 187px;
+            background-image: linear-gradient(to right, $pink-overlay, $pink-overlay), url(../images/gallery/2.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .green{
+            width: 265px;
+            height: 187px;
+            background-image: linear-gradient(to right, $green-overlay, $green-overlay), url(../images/gallery/3.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .purple{
+            width: 603px;
+            height: 306px;
+            background-image: linear-gradient(to right, $purple-overlay, $purple-overlay), url(../images/gallery/4.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .teal{
+            width: 355px;
+            height: 306px;
+            background-image: linear-gradient(to right, $teal-overlay, $teal-overlay), url(../images/gallery/5.png);
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
